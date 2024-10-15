@@ -1,0 +1,35 @@
+<!doctype HTML>
+<html>
+<head>
+    <style>
+         #poppy{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 60%;
+        } 
+
+        #point{
+          text-align: center;
+        }
+        </style>      
+</head>
+<body> 
+    <img src="https://silverfallsseed.com/wp-content/uploads/2016/01/Red-Poppy-tower-2017-51-e1683918877760.jpg" id="poppy">
+      
+        <p id="point"> score: 0 </p>
+</body>
+</html> 
+
+<script>
+   var score= 0;
+function up(){
+  score = score + 1
+  document.getElementById("point").innerHTML = "score: " + score
+console.log(score)
+}
+document.getElementById("poppy").addEventListener("click",up)
+
+
+  
+</script>
